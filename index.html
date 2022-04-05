@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+<title> image   Demo </title>
+<meta charset="UTF-8">
+<meta name="Keyword" content="important pages of wrd page ">
+<meta name="Description" content="Short description ">
+<meta name = "author" content="author name ">
+<meta name = "viewport" content=""> 
+
+<style>
+#error1,#error2,#error3,#error4,#error5 {
+    color: red;
+    font-size: 22px;
+}
+</style>
+
+    </head>
+    <body>
+<form action="submit.html" onsubmit="return validateform()">
+    <!--FirstNAME-->
+    <table>
+<tr><td><label for="fname">First Name:</label></td>
+<td><input type="text" id="fname" name="name"  onblur="validate1()"  > <br> <br>
+</td></tr>
+<tr><td></td><td id="error1"></td></tr>
+<!--Age-->
+<tr><td>
+<label for="age">Enter age  </label></td>
+<td><input type="text" id="age" name="age" onblur="validate2()" > <br> <br>
+</td></tr>
+<tr><td></td><td id="error2"></td></tr>
+<!--Email-->
+<tr><td>
+<label for="email">email-id</label></td>
+<td><input type="email" id="email" name="email" onblur="validate3()" > <br> <br>
+ </td></tr>
+ <tr><td></td><td id="error3"></td></tr>
+<!--password-->
+<tr><td>
+<label for="pass"> Password </label> </td>
+<td><input type="password" id="pass" name="password" onblur="validate4()" > <br> <br> 
+</td></tr>
+<tr><td></td><td id="error4"></td></tr>
+<!--password-->
+<tr><td>
+<label for="pass"> Confirm Password </label></td>
+<td><input type="password" id="conpass" name="conpassword" onblur="validate5()" > <br> <br> 
+</td></tr>
+<tr><td></td><td id="error5"></td></tr>  
+<tr><td><label>Show Password</label></td>
+<td><input type="checkbox" id="show" onchange="showpass()" ></td>
+</tr>
+<!-- SubmitButton --><tr><td>
+<input type="submit" value="Register"> <br> <br> 
+</td></tr>
+</table>
+</form>
+<script src="validation.js"></script>
+        </body>
+        </html>
